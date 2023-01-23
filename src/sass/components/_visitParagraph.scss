@@ -1,0 +1,10 @@
+.paragraph{
+    max-width: 33%;
+    text-align: justify;
+    line-height: 2rem;
+    margin-top: 1vw;
+}
+
+.paragraph::first-letter{
+    font-size: 200%;
+}

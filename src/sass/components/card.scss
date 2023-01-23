@@ -1,0 +1,71 @@
+@use "sass:math";
+@import "variables";
+
+
+
+
+.card-container{
+    margin-top: 4vw;
+    display: flex;
+    margin-bottom: 2vw;
+    column-gap: 5vw;
+    row-gap: 5vw;
+    padding-bottom: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+//base model
+
+.card{
+    background-color: white;
+    height: 30rem;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card .image-container{
+    position: relative;
+}
+
+.card .image-container .fa-record-vinyl{
+    position: absolute;
+    left: 6%;
+    top: 7.5%;
+}
+
+.fa-record-vinyl{
+    color: white;
+    font-size: 2rem;
+    vertical-align:middle;
+    line-height:1rem;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+             opacity: 0;
+             transition: opacity 0.5s;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .card-container{
+        margin-top: 50px;
+        row-gap: 50px;
+        display: inline-block;
+        max-width: 100%;
+        
+    }
+    .card{
+        height: auto;
+        margin-top: 50px;
+    }
+}
+

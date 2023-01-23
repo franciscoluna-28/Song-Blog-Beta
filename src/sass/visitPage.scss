@@ -1,0 +1,216 @@
+@import "variables";
+
+//componets import
+@import "./components/footer";
+@import "./components/header";
+
+
+
+
+
+
+//layout styles
+.container{
+    margin-top: 0rem;
+}
+
+//body styles
+* {
+    color: inherit;
+    margin: 0;
+}
+
+body {
+    font-family: $montserrat;
+}
+
+h1{
+    font-weight: 400
+}
+
+.container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.one{
+    height: 500px;
+    width: 50%;
+
+}
+
+h3{
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.one .pContainer{
+    margin-left: 8vw;
+    margin-top: 8vw;
+}
+
+.pContainer .paragraph{
+    width: 100%;
+    max-width: fit-content;
+    margin-right: 10vw;
+}
+
+.two{
+    height: 500px;
+    width: 50%;
+
+}
+
+
+.two .pContainer{
+    margin-top: 8vw;
+}
+
+.two .paragraph{
+    width: 100%;
+    max-width: fit-content;
+    margin-right: 10vw;
+}
+
+.three{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.title-container{
+    text-align: center;
+
+}
+
+
+//components import
+@import "./components/card.scss";
+@import "./components/visitParagraph";
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .container .row{
+        display: inline-block;
+        margin-top: 16vw;
+        height: auto;
+    }
+
+    p{
+        padding-top: 10px;        
+    }
+    .one, .two{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-top: 2vw;
+    }
+
+    h3{
+        font-size: 50px;
+    }
+
+    .two .pContainer{
+        margin-left: 8vw;
+    }
+
+    .two{
+        margin-top: 50px;
+    }
+
+    .pContainer .paragraph{
+        text-align: justify;
+    }
+    .title-container{
+        margin-left: 8vw;
+        margin-top: 50px;
+        margin-right: 100px;
+        max-width: max-content;
+    }
+
+    .paragraph-container {
+        font-size: 50rem;
+    }
+    .card-description{
+        padding-bottom: 30px;
+    }
+    .paragraph-container h4{
+        margin-top: 5px;
+    }
+    .container .row{
+        width: auto;
+        max-width: 100%;
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+    .three{
+        margin-top: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 1067px) {
+    .container .row{
+        width: 100%;
+    }
+    .one, .two{
+        margin-top: 2vw;
+    }
+    .three{
+        margin-top: 12.5rem;
+    }
+}
+
+.image-container img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.paragraph-container h4{
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: start;
+    padding-left: 2vw;
+    padding-top: 1vw;
+}
+
+.card-description{
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: start;
+    padding-left: 2vw;
+    padding-top: 0.5vw;
+    text-align: justify;
+    margin-right: 20px;
+    line-height: 17.5px;
+}
+
+b{
+    font-weight: 500; 
+}
+
+.card .image-container:hover .fa-record-vinyl{
+    opacity: 1;
+}
+
+/* .textDarkMode{
+    color: white;
+}
+
+.backgroundDarkMode{
+    background-color: #171717;
+}
+
+.cardsDarkMode{
+    background-color: #171717;
+}
+ */
+

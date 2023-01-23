@@ -1,0 +1,181 @@
+@import "variables";
+
+//imports
+@import url(/dist/css/dropDownAnimation.css);
+@import "./components/footer";
+@import "./components/header";
+
+body, html {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    overflow-y: auto !important;
+  }
+
+//layout styles
+.layout{
+    display: flex;
+    margin-top: 9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.imageContainer{
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    border-radius: 12px;
+    display: flex;
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+
+.imageContainer img{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 12px;
+    min-height: auto;
+    min-width: auto;
+}
+
+
+.trackContainer{
+    height: auto !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    position: relative;
+}
+
+.paragraph{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.25rem;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 4.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-youtube{
+    position: absolute;
+    top: 25%;
+    right: 42%;
+    color: white;
+    font-size: 16vw;
+}
+
+.fa-link{
+    display: none !important;
+}
+
+
+
+.buttonContainer{
+    display: flex;
+    column-gap: 30px;
+    padding-top: 10px;
+    max-width: 100%;
+}
+
+.button{
+    background-color: $darkGray;
+    border-radius: 20px;
+    width: 11.5rem;
+    height: 4vw;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 0.5s;
+}
+
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+@media only screen and (max-width: 1261px) {
+    .buttonContainer{
+        flex-direction: row;
+        row-gap: 3rem;
+        align-items: center;
+        padding-bottom: 50px;
+        margin-top: 20px;
+    }
+    .layout{
+        flex-direction: column;
+    }
+    .imageContainer{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .paragraph{
+        text-align: justify;
+    }
+    .button{
+        height: auto;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+    .layout{
+        margin-top: 7rem;
+    }
+    .imageContainer:hover .fa-youtube{
+        opacity: 0;
+        transition: none;
+    }
+    .imageContainer:hover .fa-link{
+        opacity: 0;
+        transition: none;
+    }
+    
+    .imageContainer:hover img{
+        filter: none;
+        transition: none;
+    }
+}
+
+@media only screen and (max-width: 883px) {
+    .buttonContainer{
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .buttonContainer{
+        flex-direction: column;
+    }
+    h3{
+        font-size: 8vw;
+    }
+}
+
+.spotify-container{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.youtube-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+//fully responsive fromm 384px to 1566px

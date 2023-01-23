@@ -1,0 +1,204 @@
+@import "variables";
+
+//componets import
+@import "./components/footer";
+@import "./components/header";
+@import "./components/visitParagraph";
+
+
+
+
+
+//layout styles
+.container{
+    margin-top: 0rem;
+}
+
+//body styles
+* {
+    color: inherit;
+    margin: 0;
+}
+
+body {
+    font-family: $montserrat;
+}
+
+h1{
+    font-weight: 400
+}
+
+.container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: auto;
+
+}
+
+.one{
+    height: 500px;
+    width: 50%;
+
+}
+
+h3{
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.one .pContainer{
+    margin-left: 8vw;
+    margin-top: 8vw;
+}
+
+.pContainer .paragraph{
+    width: 100%;
+    max-width: fit-content;
+    margin-right: 10vw;
+}
+
+.two{
+    height: 500px;
+    width: 50%;
+}
+
+
+.two .pContainer{
+    margin-top: 8vw;
+}
+
+.two .paragraph{
+    width: 100%;
+    max-width: fit-content;
+    margin-right: 10vw;
+}
+
+.three{
+    width: 100%;
+    height: auto;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.title-container{
+    text-align: center;
+}
+
+.three .image-container img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.four{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.conclusion-paragraph{
+    text-align: justify;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    line-height: 2rem;
+    margin-top: 1vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container .row{
+        display: inline-block;
+        margin-top: 10vw;
+        height: auto;
+    }
+
+    p{
+        padding-top: 10px;        
+    }
+    .one, .two{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-top: 2vw;
+    }
+
+    h3{
+        font-size: 50px;
+    }
+
+    .two .pContainer{
+        margin-left: 8vw;
+    }
+
+    .two{
+        margin-top: 50px;
+    }
+
+    .pContainer .paragraph{
+        text-align: justify;
+    }
+    .title-container{
+        margin-left: 8vw;
+        margin-top: 50px;
+        margin-right: 100px;
+        max-width: max-content;
+    }
+
+    .paragraph-container {
+        font-size: 50rem;
+    }
+    .card-description{
+        padding-bottom: 30px;
+    }
+    .paragraph-container h4{
+        margin-top: 5px;
+    }
+    .container .row{
+        width: auto;
+        max-width: 100%;
+    }
+    .image-container{
+        justify-content: center;
+        display: flex;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .three{
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    .three img{
+        padding-left: 8vw;
+        padding-right: 8vw;
+        border-radius: 10px;
+    }
+    
+    .conclusion-paragraph{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+    @media only screen and (max-width: 1000px) {
+        .one, .two{
+            margin-top: 5vw;
+        }
+            
+        }
+    
+
+
+
+
+    
+
+
